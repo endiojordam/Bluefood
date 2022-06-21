@@ -1,9 +1,30 @@
 package endio.Bluefood.domain.usuario;
 
-public class Usuario {
+import java.io.Serializable;
 
-	public Usuario() {
-		// TODO Auto-generated constructor stub
-	}
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+
+@SuppressWarnings("serial")
+@Setter
+@Getter
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@MappedSuperclass
+public class Usuario implements Serializable{
+
+	@EqualsAndHashCode.Include
+	@Id
+	private Integer id;
+	
+	private String nome;
+	
+	private String email;
+	
+	private String senha;
+	
+	private String telefone;
 }

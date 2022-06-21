@@ -1,15 +1,24 @@
 package endio.Bluefood.domain.cliente;
 
-import endio.Bluefood.domain.usuario.Usuario;
+import javax.persistence.Entity;
 
+import endio.Bluefood.domain.usuario.Usuario;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+
+
+
+@SuppressWarnings("serial")
+@Setter
+@Getter
+@EqualsAndHashCode(onlyExplicitlyIncluded = true, callSuper = true)
+@Entity
 public class Cliente extends Usuario{
 	
-	private Integer cpf;
+	private String cpf;
 	
-	private Integer cep;
+	private String cep;
 
-	public Cliente() {
-		// TODO Auto-generated constructor stub
-	}
 
 }
