@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>BlueFood</title>
+<link rel="stylesheet" type="text/css" href="estiloSistema.css"/>
+</head>
+
+<body>
+	<Header>
+		<div id="divLogotipoSistema">
+		<span id= "spanAuxiliarLogotipo"></span>
+			<a href="">
+				<img src="images/bf_logotipoSistema.png" id="imgLogotipoSistema">           <!-- BAIXAR IMAGEM LOGOTIPO -->
+			</a>
+		</div>
+		<div id="divUsuarioLogado">
+			Olá Nome de Usuário!
+
+		</div>
+	</Header>
+	<br>
+	<br>
+	<!-- Fim do cabeçalho  -->
+	
+	
+	
+	<div>
+	
+		<h1>Cadastro do Restaurante</h1>
+		
+		<div id="mensagemDeSucesso">
+			Aqui vai uma mensagem de sucesso
+		</div><br>	
+		
+		<form method="post" action="">
+		
+			<fieldset>
+	
+				<label for="nomeRestaurante">Nome do Restaurante:</label><br/>
+				<input type="text" id="nomeRestaurante" name="nomeRestaurante" placeholder="Nome..."/><br/><br/>
+				<div id="divMensagemErro">
+					MSG DE ERRO
+				</div>
+				
+				<label for="cnpj">CNPJ:</label><br/>
+				<input type="text" id="cnpj" name="cnpj" placeholder="CNPJ..."/><br/><br/>
+				
+				<label for="email">E-mail:</label><br/>
+				<input type="text" id="email" name="email" placeholder="E-mail..."/><br/><br/>
+						
+				<label for="telefone">Telefone:</label><br/>
+				<input type="text" id="telefone" name="telefone" placeholder="Telefone..."/><br/><br/>
+						
+				<label for="cep">CEP:</label><br/>
+				<input type="text" id="cep" name="cep" placeholder="CEP..."/><br/><br/>
+				
+				<label for="categoria">Categoria de comida:</label><br/>
+				<select id="categoria" nome="categoria">
+					<option>Salada</option>
+					<option>Hamburguer</option>
+					<option>Pizza</option>
+					<option>Sobremesa</option>
+					<option>Churrasco</option>
+				</select><br/><br/>
+				
+				<label for="logotipo">Logotipo:</label><br/>
+				<input type="file" id="logotipo" name="logotipo" placeholder="Selecionar..."/><br/><br/>
+				
+				<label for="senha"> Senha:</label><br/>
+				<input type="password" id = "senha" name="senha" placeholder="Senha..."/><br/><br/>
+				
+				<div>
+				Exemplo de msg de erro.
+				</div>
+				<br/><br/>
+				
+				<input type="button" value="Cadastrar"/>
+				
+			</fieldset>
+			
+			
+		</form>
+		<br/>
+			<input type="button" value="Voltar"/>
+	</div>
+	
+	
+	
+	
+		<!-- Rodapé - inicio -->
+</body>
+
+</html>

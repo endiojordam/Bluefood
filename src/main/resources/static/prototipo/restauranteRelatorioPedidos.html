@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>BlueFood</title>
+<link rel="stylesheet" type="text/css" href="estiloSistema.css"/>
+</head>
+
+<body>
+	<Header>
+		<div id="divLogotipoSistema">
+		<span id= "spanAuxiliarLogotipo"></span>
+			<a href="">
+				<img src="images/bf_logotipoSistema.png" id="imgLogotipoSistema">           <!-- BAIXAR IMAGEM LOGOTIPO -->
+			</a>
+		</div>
+		<div id="divUsuarioLogado">
+			Olá Nome de Usuário!
+		
+		</div>
+	</Header>
+	<br>
+	<br>
+	<!-- Fim do cabeçalho  -->			
+	
+	<div>
+		<div>
+			<h1>Relatório de Pedidos</h1>
+			<form method="post">
+				<fieldset>
+					<legend>Filtros</legend>
+					<label for="numero">Número:</label><br/>
+					<input type="text" id="numero" name="numero" placeholder="Número..." /><br/>
+					
+					<label for="Inicio">Inicio:</label><br/>
+					<input type="date" id="inicio" name="item" placeholder="dd / mm / aa"/><br/>
+				
+					<label for="fim">Fim:</label><br/>
+					<input type="date" id="fim" name="fim" placeholder="dd / mm / aa"/><br/>			
+					
+				</fieldset>
+			</form>
+		</div>
+		
+		<table>
+		<tr>
+			<th> Pedido </th>
+			<th> Nome </th>
+			<th> Endereço </th>
+			<th> Valor </th>
+		</tr>
+		
+		<tr>
+			<td><input type="button" value="#5324"/></td>
+			<td>Samuel</td>
+			<td>Rua das flores 75</td>
+			<td>R$65,00</td>
+		</tr>
+		
+		<tr>
+			<td><input type="button" value="#5344"/></td>
+			<td>Henrique</td>
+			<td>Avenida dos Estados 71</td>
+			<td>R$74,00</td>
+		</tr>
+		
+		<tr>
+			<td><input type="button" value="#5327"/></td>
+			<td>Jorge</td>
+			<td>Rua Marambá 75</td>
+			<td>R$35,00</td>
+		</tr>
+		
+		</table>
+	</div>
+	<br/><br/>
+	
+	<input type="button" value="Voltar"/>
+						
+	<!-- Rodapé -   inicio -->
+</body>
+
+</html>	

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>BlueFood</title>
+<link rel="stylesheet" type="text/css" href="estiloSistema.css"/>
+</head>
+
+<body>
+	<Header>
+		<div id="divLogotipoSistema">
+		<span id= "spanAuxiliarLogotipo"></span>
+			<a href="">
+				<img src="images/bf_logotipoSistema.png" id="imgLogotipoSistema">           <!-- BAIXAR IMAGEM LOGOTIPO -->
+			</a>
+		</div>
+		<div id="divUsuarioLogado">
+			Olá Nome de Usuário!
+		</div>
+	</Header>
+	<br>
+	<br>
+	<!-- Fim do cabeçalho  -->		
+	
+	<div>
+		<div>
+			<h1>Relatório de Itens</h1>
+			<form method="post">
+				<fieldset>
+					<legend>Filtros</legend>
+					<label for="item">Item:</label><br/>
+					<input type="text" id="item" name="item" placeholder="Itens..." /><br/>
+					
+					<label for="Inicio">Inicio:</label><br/>
+					<input type="date" id="inicio" name="item" placeholder="dd / mm / aa"/><br/>
+				
+					<label for="fim">Fim:</label><br/>
+					<input type="date" id="fim" name="fim" placeholder="dd / mm / aa"/><br/>
+					
+				</fieldset>
+			</form>
+			<br/><br/>
+		</div>
+			
+		<table>
+			<tr>
+				<th>Item</th>
+				<th>Quantidade</th>
+				<th>Faturamento</th>
+			</tr>
+				
+			<tr>
+				<td>Hamburguer</td>
+				<td>25</td>
+				<td>R$355,00</td>
+			</tr>
+			
+			<tr>
+				<td>Pizza</td>
+				<td>134</td>
+				<td>R$1.260,00</td>
+			</tr>
+			
+			<tr>
+				<td>Salada</td>
+				<td>12</td>
+				<td>R$ 321.00</td>
+			</tr>
+			
+			<tr>
+				<td>Refrigerante</td>
+				<td>155</td>
+				<td>R$452,00</td>
+			</tr>
+		</table>
+		<br/><br/>
+	</div>
+	
+	<input type="button" value="Voltar"/>
+	
+	<!-- Rodapé -   inicio -->
+</body>
+
+</html>	

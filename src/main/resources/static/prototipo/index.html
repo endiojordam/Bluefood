@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>BlueFood</title>
+<link rel="stylesheet" type="text/css" href="estiloSistema.css"/>
+</head>
+
+<body>
+	<Header>
+		<div id="divLogotipoSistema">
+		<span id= "spanAuxiliarLogotipo"></span>
+			<a href="">
+				<img src="images/bf_logotipoSistema.png" id="imgLogotipoSistema">           <!-- BAIXAR IMAGEM -->
+			</a>
+		</div>
+	</Header>
+	<br>
+	<br>
+	<!-- Fim do cabeçalho  -->
+
+	<div>
+		<img src="images/bf_iconeUsuario.png" id="imgIconeUsuario">               <!-- BAIXAR IMAGEM -->
+		<h1>Autenticação</h1>
+		<form method="post" action="">
+			<fieldset>
+				<input type="text" name="email" placeholder="E-mail..." /> <input
+					type="password" name="senha" placeholder="Senha..." /> <input
+					type="button" value="Entrar" onclick="location.href='clienteHome.html';">
+			</fieldset>
+		</form>
+		<br>
+		<div id="divMensagemErro">
+		MENSAGEM DE ERRO 
+		</div> <br>
+		
+		
+		<input type ="button" value="Criar conta de usuário" onclick="location.href='clienteCadastro.html';"/>
+		<br>
+		<input type = "button" value ="Criar conta de restaurante" onclick="location.href='restauranteCadastro.html';"/> 
+	</div>
+
+	<!-- Rodapé - inicio -->
+</body>
+
+</html>

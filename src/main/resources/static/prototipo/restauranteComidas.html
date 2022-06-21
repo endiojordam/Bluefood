@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>BlueFood</title>
+<link rel="stylesheet" type="text/css" href="estiloSistema.css"/>
+</head>
+
+<body>
+	<Header>
+		<div id="divLogotipoSistema">
+		<span id= "spanAuxiliarLogotipo"></span>
+			<a href="">
+				<img src="images/bf_logotipoSistema.png" id="imgLogotipoSistema">           <!-- BAIXAR IMAGEM LOGOTIPO -->
+			</a>
+		</div>
+		<div id="divUsuarioLogado">
+			Olá Nome de Usuário!
+		
+		</div>
+	</Header>
+	<br>
+	<br>
+	<!-- Fim do cabeçalho  -->	
+	
+	
+	<div>
+		<h1>Comidas</h1>
+	</div>
+	
+	<div>
+		<div>
+			<span>Pizza de calabresa</span><br/>
+			<span>Pizzas</span><br/>
+			<span>Massa fina, queijo, calabresa e pimenta.</span><br/>
+			<span>R$45,00</span><br/>
+			<input type="button" value="Remover"/><br/>
+		</div>
+		<br/><br/>
+		<div>
+			<span>Hamburguer</span><br/>
+			<span>Hamburguer</span><br/>
+			<span>Pão, carne 200g, queijo tomate e alface..</span><br/>
+			<span>R$35,00</span><br/>
+			<input type="button" value="Remover"/><br/>
+		</div>
+		
+		<div>
+			Eventual mensagem de erro.
+		</div>
+		<br/><br/>
+		<div>
+		<span>Nova comida</span>
+		<form method="post" action="">
+			<fieldset>
+			
+			<label for="item">Item:</label><br/>
+			<input type="text" id="item" name="item" placeholder="Itens..."/><br/>
+			
+			<label for="descricao">Descrição:</label><br/>
+			<input type="text" id="descricao" name="descricao" placeholder="Descrição..."/><br/>
+			
+			<label for="preco">Preço:</label><br/>
+			<input type="text" id="preco" name="preco" placeholder="Preço..."/><br/>
+			
+			<label for="categoriacomida">Categoria de comida:</label><br/>
+			<input type="text" id="categoriacomida" name="categoriacomida" placeholder="Categoria..."/><br/>
+			
+			<label for="destaque">Destaque:</label><br/>
+			<input type="checkbox" id="destaque" name="destaque"/><br/>
+			
+			
+			<br/><br/>
+			<input type="button" value="Adicionar"><br/><br/>
+			</fieldset>
+		</form>
+			
+			
+			<input type="button" value="Voltar"/>
+		</div>
+	
+	</div>
+	
+	
+	<!-- Rodapé -   inicio -->
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>BlueFood</title>
+<link rel="stylesheet" type="text/css" href="estiloSistema.css"/>
+<script>
+	function isNumberkey(evt) 
+{
+		var charCode = (evt.which) ? evt.which : event.keyCode;
+		
+		if (charCode = 31 && (charCode < 48 || charCode > 57))
+			return false;
+		
+		return true;
+}
+</script>
+</head>
+
+<body>
+	<Header>
+		<div id="divLogotipoSistema">
+		<span id= "spanAuxiliarLogotipo"></span>
+			<a href="">
+				<img src="images/bf_logotipoSistema.png" id="imgLogotipoSistema">           <!-- BAIXAR IMAGEM LOGOTIPO -->
+			</a>
+		</div>
+		<div id="divUsuarioLogado">
+			Olá Nome de Usuário!
+			<br/><br/>
+			<img src="images/bf_iconeCarrinho.png" id="imgIconeCarrinho"> 
+		</div>
+	</Header>
+	<br>
+	<br>
+	<!-- Fim do cabeçalho  -->
+	
+	<div>
+		<h1>Seu pedido</h1><br/>
+		<img src ="images/sys_restauranteSbubby.png" id="imgRestauranteOpcao"/><br/><br/>
+		<div>
+		
+		
+			<span id = "RestauranteOpcaoTitulo">Pizza calabresa</span>	<br/>
+			<span>Qtd : 1</span><br/>	
+			<span>(Observação se houver)</span><br/>
+			<span>R$45,00</span><br/>
+			<br/>
+			
+			<input type="button" value="Remover"/>
+			<br/><br/>
+			
+			<span id = "RestauranteOpcaoTitulo">Hamburguer</span>	<br/>
+			<span>Qtd : 1</span><br/>	
+			<span>(Observação se houver)</span><br/>
+			<span>R$30,00</span><br/>
+			<br/>
+			
+			<input type="button" value="Remover"/>
+			<br/><br/>
+			
+			<span id = "RestauranteOpcaoTitulo">Taxa de entregar</span>	<br/>
+			<span>R$15,00</span>
+			<br/><br/>
+			<span id = "RestauranteOpcaoTitulo">Total</span>	<br/>
+			<span>R$120,00</span>
+			<br/><br/>
+			<span id = "span#RestauranteOpcaoTitulo">Observações</span>	<br/>
+			<textarea></textarea>
+			
+			<div>
+				<span id = "RestauranteOpcaoTitulo">Cartão de crédito</span>	<br/>
+				<input type="text" id="inputLargo" onkeypress="return isNumberKey(event)">
+			</div>
+			<br/>
+			
+			<div>
+			
+			<input type="button" value="Enviar pedido" onclick=""/>
+			
+			</div>
+			
+					
+		</div>
+	
+	</div>
+	
+	
+	<!-- Rodapé -   inicio -->
+</body>
+
+</html>
