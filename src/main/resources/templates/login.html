@@ -20,8 +20,11 @@
 		MENSAGEM DE ERRO 
 		</div> <br>
 		
+		<form method="get" th:action="@{/public/cliente/new}">
+			<input type="submit" value =  "Criar conta de cliente" />
+		</form>
 		
-		<input type ="button" value="Criar conta de usuário" onclick="location.href='clienteCadastro.html';"/>
+		
 		<br>
 		<input type = "button" value ="Criar conta de restaurante" onclick="location.href='restauranteCadastro.html';"/> 
 	</div>
