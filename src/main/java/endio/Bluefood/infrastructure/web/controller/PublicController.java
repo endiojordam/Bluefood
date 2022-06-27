@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import endio.Bluefood.application.ClienteService;
+import endio.Bluefood.application.ValidationException;
 import endio.Bluefood.domain.cliente.Cliente;
 
 @Controller
@@ -38,8 +39,12 @@ public class PublicController {
 			Model model) {
 		
 		if(!errors.hasErrors()) {
-			clienteService.saveCliente(cliente);
-			model.addAttribute("msg", "Cliente cadastrado com sucesso");
+			try {
+				clienteService.saveCliente(cliente);
+				model.addAttribute("msg", "Cliente cadastrado com sucesso");
+			} catch(ValidationException e) {
+				errors.rejectValue("email", null, e.getMessage());
+			}
 		}
 		
 		ControllerHelper.setEditMode(model, false);

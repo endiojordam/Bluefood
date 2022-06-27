@@ -12,6 +12,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import endio.Bluefood.util.StringUtils;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -43,9 +44,16 @@ public class Usuario implements Serializable{
 	private String senha;
 	
 	@NotBlank(message="O campo telefone não pode ser vazio")
-	@Pattern(regexp = "[0-9] {10,11}", message ="O Telefone não tem tamanho válido")
+	@Pattern(regexp = "[0-9]{10,12}?", message ="O Telefone não tem tamanho válido")
 	@Column(length= 11, nullable = false)
 	private String telefone;
+	
+	public void encryptPasssword() {
+		
+		this.senha = StringUtils.encrypt(this.senha);
+		
+		
+	}
 	
 	public Integer getId() {
 		return id;

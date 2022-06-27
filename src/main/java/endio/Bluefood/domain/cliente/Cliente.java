@@ -22,14 +22,16 @@ public class Cliente extends Usuario{
 	
 	
 	@NotBlank(message = "O campo CPF não pode ser vazio")
-	@Pattern(regexp = "[0-9] {11}", message ="O CPF não tem tamanho válido")
+	@Pattern(regexp = "[0-9]{11}?", message ="O CPF não tem tamanho válido")
 	@Column(length = 11)
 	private String cpf;
 	
 	@NotBlank(message = "O campo CEP não pode ser vazio")
-	@Pattern(regexp = "[0-9] {8}", message ="O CEP não tem tamanho válido")
+	@Pattern(regexp = "[0-9]{8}?", message ="O CEP não tem tamanho válido") 
 	@Column(length = 8)
 	private String cep;
+	
+	
 
 	public String getCpf() {
 		return cpf;
